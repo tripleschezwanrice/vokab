@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@200;300;600&display=swap');
+
+  /* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffbe19;
+  border-radius: 0px;
+}
+
+/* For Firefox */
+/* Use the custom properties if you want to change the width or color */
+
+/* For Firefox thumb */
+/* You can adjust the border-radius here as well */
+/* Note: Firefox does not support rounded track */
+scrollbar-thumb {
+  border-radius: 4px;
+}
+
+
+body{
+  background-color: #1d1c1a;
+font-family: 'Poppins', sans-serif;
+}
