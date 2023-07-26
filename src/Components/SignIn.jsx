@@ -1,14 +1,14 @@
 import { getAuth, signInWithPopup,GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase";
 const SignIn = ({setLoading}) => {
-
+ 
     function signInWithGoogle(){
-        setLoading(true)
-
-        const provider = new GoogleAuthProvider();
-        
-        signInWithPopup(auth, provider)
-        .then((result) => {
+      
+      const provider = new GoogleAuthProvider();
+      
+      setLoading(true)
+      signInWithPopup(auth, provider)
+      .then((result) => {
             // This gives you a Google Access Token. You can use it to access the Google API.
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
@@ -29,13 +29,10 @@ const SignIn = ({setLoading}) => {
           });
     }
 
-  return (
-    
-     
-        <button onClick={signInWithGoogle} className="font-semibold border text-xl px-2 py-1 border-[#ffbe19] text-[#ffbe19]">
+  return ( 
+        <button onClick={signInWithGoogle} className="min-w-[70px] font-semibold border text-sm sm:text-base md:text-lg lg:text-xl px-2 py-1 border-[#ffbe19] text-[#ffbe19] flex">
           Sign In 
         </button>
-    
   );
 };
 
