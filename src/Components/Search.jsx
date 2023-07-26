@@ -172,7 +172,7 @@ setLoading(false)
               </div>
             }
           </div>
-          {user && recent.length > 3 && <Link to="/words" className='bg-[#ffbe19] text-[#1d1b1e] m-3 font-bold w-[30%] mt-6 p-2  text-base md:text-lg lg:text-xl flex mx-auto justify-center'>
+          {user && recent.length > 3 && <Link to="/vokab/words" className='bg-[#ffbe19] text-[#1d1b1e] m-3 font-bold w-[30%] mt-6 p-2  text-base md:text-lg lg:text-xl flex mx-auto justify-center'>
             See All
           </Link>}
 

@@ -18,8 +18,8 @@ const Navbar = ({setLoading,setMeanings,meanings}) => {
             <div className='flex items-center '>
             {user? 
             <div className='text-[#ffbe19] flex gap-24 font-semibold text-sm sm:text-base md:text-lg lg:text-xl items-center'>
-             <Link to='/words' className='md:grid hidden'>Saved</Link>
-            <Link to="/" className='font-custom text-lg md:text-2xl lg:text-3xl '>Vokab</Link>
+             <Link to='/vokab/words' className='md:grid hidden'>Saved</Link>
+            <Link to="/vokab" className='font-custom text-lg md:text-2xl lg:text-3xl '>Vokab</Link>
 
 <div className='md:flex hidden'>
         <SignOut setLoading={setLoading} setMeanings={setMeanings} size={25}/>
@@ -38,8 +38,8 @@ const Navbar = ({setLoading,setMeanings,meanings}) => {
         
       <div className={`${sidebar?"flex duration-200":"hidden duration-200"}  z-40 origin-top-right absolute right-0  border border-[#ffbe19] bg-[#1d1c1a] shadow-[#ffbe19]`}>
         <div className=" flex flex-col  " role="menu"  aria-labelledby="options-menu">
-          <Link to="/" className="w-32 text-[#ffbe19] px-2 py-1 justify-center text-center text-sm sm:text-base md:text-lg  m-1 p-1  hover:bg-[#1d201f]">Home</Link>
-          <Link to="/words"><p href="#" className="w-32 text-[#ffbe19] justify-center text-center text-sm sm:text-base md:text-lg hover:bg-[#1d201f]  px-2 py-1 m-1 p-1" role="menuitem">Saved</p></Link>
+          <Link to="/vokab" className="w-32 text-[#ffbe19] px-2 py-1 justify-center text-center text-sm sm:text-base md:text-lg  m-1 p-1  hover:bg-[#1d201f]">Home</Link>
+          <Link to="/vokab/words"><p href="#" className="w-32 text-[#ffbe19] justify-center text-center text-sm sm:text-base md:text-lg hover:bg-[#1d201f]  px-2 py-1 m-1 p-1" role="menuitem">Saved</p></Link>
           <SignOut setLoading={setLoading} setMeanings={setMeanings} size={25}/>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Navbar = ({setLoading,setMeanings,meanings}) => {
         </div>
               :
               <div className='text-[#ffbe19] flex gap-12 font-semibold text-xl items-center '>
-            <Link to="/" className='font-custom text-lg md:text-2xl lg:text-3xl '>Vokab</Link>
+            <Link to="/vokab" className='font-custom text-lg md:text-2xl lg:text-3xl '>Vokab</Link>
             
 
           <SignIn setLoading={setLoading} className="mx-auto flex justify-center"/>
