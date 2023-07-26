@@ -9,7 +9,7 @@ const SignOut = ({setLoading}) => {
 
 
     
-        const auth = getAuth();
+    const auth = getAuth();
     signOut(auth).then(() => {
       // Sign-out successful.
  
