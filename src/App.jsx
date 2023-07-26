@@ -33,10 +33,10 @@ function App() {
  <BrowserRouter >
     <Navbar  setLoading={setLoading} setMeanings={setMeanings}/>
     <Routes>
-    <Route path="/" element={<Search word={word} setWord={setWord} meanings={meanings} setLoading={setLoading} searched={searched} loading={loading} wordSearching={wordSearching}/> 
+    <Route path="/vokab" element={<Search word={word} setWord={setWord} meanings={meanings} setLoading={setLoading} searched={searched} loading={loading} wordSearching={wordSearching}/> 
 }/>
  
-<Route path="/words" element={<Words meanings={meanings} loading={loading} setLoading={setLoading} setMeanings={setMeanings} setWord={setWord}/> }/>
+<Route path="/vokab/words" element={<Words meanings={meanings} loading={loading} setLoading={setLoading} setMeanings={setMeanings} setWord={setWord}/> }/>
     </Routes>
  
  </BrowserRouter>
